@@ -5,7 +5,7 @@
   become: yes
   become_user: root
   vars:
-    TFROM: 1.8.5
+    TFROM: 1.10.5
   tasks:
     - name: check the hostnames
       shell: cat /etc/lsb-release
