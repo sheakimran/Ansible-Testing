@@ -20,6 +20,11 @@
     - name: Create .aws folder
       shell: mkdir -p /root/.aws
       ignore_errors: yes
+    - name: Install pip
+      apt:
+        name: python3-pip
+        state: latest
+      
     - name: Install passlib
       pip:
         name: passlib
