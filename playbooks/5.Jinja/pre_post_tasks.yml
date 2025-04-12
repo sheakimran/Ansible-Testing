@@ -8,7 +8,7 @@
         rm -rf /tmp/hostname-*
         rm -rf /tmp/files/
         rm -rf /tmp/my*
-        ansible -i /root/ansiblecode/invfile pvt -m ping --become
+        ansible -i /root/ansible-files/invfile pvt -m ping --become
         terraform init
         terraform state list
         echo $(pwd)
